@@ -3,6 +3,8 @@ This is a simple quiz game that can be played over the network. The game consist
 
 > This project was carried out as an assignment for the Computer Network & Programming class.
 
+<br/>
+
 # Installation
 1. Clone the repository
 ```bash
@@ -12,6 +14,8 @@ cd quiz-game-over-the-cloud
 
 2. Run `./gradlew serverJar clientJar` to build the server and client jar files. The jar file will be created in the root directory of the project.
 
+<br/>
+
 # Run with gradle task
 > In this case, you don't need to build the jar files.
 ## Running the server
@@ -19,6 +23,8 @@ cd quiz-game-over-the-cloud
 
 ## Running the client
 1. Run `./gradlew runClient` to start the client
+
+<br/>
 
 # Run with jar files
 > You need to build the jar files before running the server and client.
@@ -29,6 +35,8 @@ cd quiz-game-over-the-cloud
 
 ## Running the client
 1. Run `java -jar quiz-client.jar` to start the client
+
+<br/>
 
 # Protocol
 This protocol defines the communication between client and server for implementing a quiz game over network communication. The protocol follows a request-response pattern and maintains game state on the server side.
