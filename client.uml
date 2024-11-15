@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.kamilereon.client</OriginalElement>
+  <nodes>
+    <node x="538.4447741694662" y="49.12609182530804">net.kamilereon.utils.LoggerUtils</node>
+    <node x="2645.7604516610677" y="517.0">net.kamilereon.utils.ResponseHandler</node>
+    <node x="-489.2065136244869" y="786.0">net.kamilereon.quiz.QuizDB</node>
+    <node x="1592.9166666666665" y="745.0">net.kamilereon.response.EndResponse</node>
+    <node x="-487.9565136244869" y="252.0">net.kamilereon.quiz.QuizGame</node>
+    <node x="2634.7604516610677" y="105.50615901455774">net.kamilereon.utils.ServerConfigLoader</node>
+    <node x="568.846957820082" y="745.0">net.kamilereon.request.EndRequest</node>
+    <node x="1996.0555244494212" y="252.0">net.kamilereon.parser.ResponseParser</node>
+    <node x="494.7570595371409" y="252.0">net.kamilereon.parser.RequestParser</node>
+    <node x="1510.9166666666665" y="1263.5929451287795">net.kamilereon.response.Response.Status</node>
+    <node x="-489.2065136244869" y="934.0">net.kamilereon.quiz.QuizDB.QuestionAnswer</node>
+    <node x="2027.0555244494212" y="745.0">net.kamilereon.response.NextResponse</node>
+    <node x="1150.2736655468457" y="-24.299440089585545">net.kamilereon.utils.MessageUtils</node>
+    <node x="1129.791526689063" y="745.0">net.kamilereon.request.NextRequest</node>
+    <node x="734.7778088839118" y="745.0">net.kamilereon.request.AnswerRequest</node>
+    <node x="1510.9166666666665" y="1033.6984882418813">net.kamilereon.response.Response</node>
+    <node x="1795.32540126913" y="745.0">net.kamilereon.response.AnswerResponse</node>
+    <node x="1243.9059844158267" y="252.0">net.kamilereon.Method</node>
+    <node x="946.7778088839118" y="745.0">net.kamilereon.request.StartRequest</node>
+    <node x="-69.09347704367246" y="252.00000000000003">net.kamilereon.server.ServerThread</node>
+    <node x="-551.1491228070176" y="-5.267637178051473">net.kamilereon.utils.ColorFormatter</node>
+    <node x="901.5278088839118" y="962.0">net.kamilereon.request.Request</node>
+    <node x="1380.9166666666665" y="745.0">net.kamilereon.response.StartResponse</node>
+    <node x="-298.56961552818234" y="-5.267637178051473">net.kamilereon.server.Server</node>
+    <node x="2273.4163867114594" y="252.0">net.kamilereon.client.Client</node>
+    <node x="2645.7604516610677" y="252.0">net.kamilereon.utils.OutputFormatter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.request.Request" relationship="DEPENDENCY">
+      <point x="201.50047704367245" y="-1.0" />
+      <point x="551.347" y="435.5" />
+      <point x="551.347" y="389.0" />
+      <point x="1303.5" y="389.0" />
+      <point x="1303.5" y="989.0" />
+      <point x="57.00019111608822" y="-2.5" />
+    </edge>
+    <edge source="net.kamilereon.response.Response.Status" target="net.kamilereon.response.Response" relationship="INNER_CLASS">
+      <point x="-5.0" y="-58.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.response.EndResponse" relationship="DEPENDENCY">
+      <point x="4.755505788125447E-4" y="44.0" />
+      <point x="2097.556" y="525.0" />
+      <point x="1671.917" y="525.0" />
+      <point x="3.3333333340124227E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.parser.RequestParser" relationship="DEPENDENCY">
+      <point x="201.5" y="-140.5" />
+      <point x="-96.5" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.response.EndResponse" relationship="DEPENDENCY">
+      <point x="201.50047704367245" y="14.0" />
+      <point x="487.257" y="450.5" />
+      <point x="487.257" y="525.0" />
+      <point x="1671.917" y="525.0" />
+      <point x="3.3333333340124227E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.request.AnswerRequest" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="-15.0" />
+      <point x="2252.0" y="435.5" />
+      <point x="2252.0" y="410.0" />
+      <point x="1079.0" y="410.0" />
+      <point x="1079.0" y="650.0" />
+      <point x="820.778" y="650.0" />
+      <point x="1.9111608821731352E-4" y="-72.5" />
+    </edge>
+    <edge source="net.kamilereon.quiz.QuizGame" target="net.kamilereon.quiz.QuizDB" relationship="DEPENDENCY">
+      <point x="157.9995136244869" y="0.0" />
+      <point x="-93.0" y="521.0" />
+      <point x="-93.0" y="830.0" />
+      <point x="185.9995136244869" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.request.NextRequest" target="net.kamilereon.request.Request" relationship="GENERALIZATION">
+      <point x="4.7331093696811877E-4" y="44.0" />
+      <point x="1204.792" y="926.0" />
+      <point x="958.528" y="926.0" />
+      <point x="1.9111608821731352E-4" y="-29.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.response.NextResponse" relationship="DEPENDENCY">
+      <point x="201.50047704367245" y="108.0" />
+      <point x="472.257" y="544.5" />
+      <point x="472.257" y="572.0" />
+      <point x="2113.056" y="572.0" />
+      <point x="4.755505788125447E-4" y="-86.5" />
+    </edge>
+    <edge source="net.kamilereon.request.EndRequest" target="net.kamilereon.request.Request" relationship="GENERALIZATION">
+      <point x="4.217991795485432E-5" y="44.0" />
+      <point x="642.347" y="926.0" />
+      <point x="958.528" y="926.0" />
+      <point x="1.9111608821731352E-4" y="-29.5" />
+    </edge>
+    <edge source="net.kamilereon.server.Server" target="net.kamilereon.utils.ColorFormatter" relationship="DEPENDENCY">
+      <point x="-99.0" y="-56.5" />
+      <point x="103.5" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.quiz.QuizDB.QuestionAnswer" target="net.kamilereon.quiz.QuizDB" relationship="INNER_CLASS">
+      <point x="59.499513624486895" y="-185.0" />
+      <point x="14.999513624486895" y="44.0" />
+    </edge>
+    <edge source="net.kamilereon.server.Server" target="net.kamilereon.server.ServerThread" relationship="DEPENDENCY">
+      <point x="99.0" y="0.0" />
+      <point x="102.40699999999998" y="95.23236282194853" />
+      <point x="-29.999522956327553" y="-184.49999999999997" />
+    </edge>
+    <edge source="net.kamilereon.utils.ResponseHandler" target="net.kamilereon.response.Response" relationship="DEPENDENCY">
+      <point x="-4.516610674727417E-4" y="44.0" />
+      <point x="2788.26" y="697.0" />
+      <point x="1575.417" y="697.0" />
+      <point x="-23.9996666666666" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.response.AnswerResponse" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="57.0" />
+      <point x="2252.0" y="507.5" />
+      <point x="2252.0" y="488.0" />
+      <point x="1892.825" y="488.0" />
+      <point x="-4.0126912995219755E-4" y="-114.5" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.response.NextResponse" relationship="DEPENDENCY">
+      <point x="15.000475550578813" y="44.0" />
+      <point x="2112.556" y="572.0" />
+      <point x="2113.056" y="572.0" />
+      <point x="4.755505788125447E-4" y="-86.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.utils.OutputFormatter" relationship="DEPENDENCY">
+      <point x="168.0" y="-126.5" />
+      <point x="-153.0" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.parser.ResponseParser" relationship="DEPENDENCY">
+      <point x="-168.0" y="-184.5" />
+      <point x="101.5" y="-30.0" />
+    </edge>
+    <edge source="net.kamilereon.response.NextResponse" target="net.kamilereon.response.Response" relationship="GENERALIZATION">
+      <point x="4.755505788125447E-4" y="86.5" />
+      <point x="2113.056" y="1004.0" />
+      <point x="1599.417" y="1004.0" />
+      <point x="3.3333333340124227E-4" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.response.AnswerResponse" relationship="DEPENDENCY">
+      <point x="-14.999524449421187" y="44.0" />
+      <point x="2082.556" y="488.0" />
+      <point x="1892.825" y="488.0" />
+      <point x="-4.0126912995219755E-4" y="-114.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.response.NextResponse" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="163.5" />
+      <point x="2252.0" y="614.0" />
+      <point x="2252.0" y="572.0" />
+      <point x="2113.056" y="572.0" />
+      <point x="4.755505788125447E-4" y="-86.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.request.StartRequest" relationship="DEPENDENCY">
+      <point x="-29.99952295632754" y="184.5" />
+      <point x="102.407" y="674.0" />
+      <point x="1022.278" y="674.0" />
+      <point x="1.9111608821731352E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.request.StartRequest" relationship="DEPENDENCY">
+      <point x="-3.867114592139842E-4" y="198.5" />
+      <point x="2441.416" y="674.0" />
+      <point x="1022.278" y="674.0" />
+      <point x="1.9111608821731352E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.quiz.QuizDB.QuestionAnswer" relationship="DEPENDENCY">
+      <point x="-59.99952295632755" y="184.5" />
+      <point x="72.40699999999998" y="1119.0" />
+      <point x="141.5" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.Method" relationship="DEPENDENCY">
+      <point x="-5.953714094175666E-5" y="-44.0" />
+      <point x="591.257" y="224.0" />
+      <point x="1341.906" y="224.0" />
+      <point x="1.5584173297611414E-5" y="-58.0" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.response.AnswerResponse" relationship="DEPENDENCY">
+      <point x="201.50047704367245" y="88.5" />
+      <point x="472.257" y="525.0" />
+      <point x="472.257" y="488.0" />
+      <point x="1892.825" y="488.0" />
+      <point x="-4.0126912995219755E-4" y="-114.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.utils.ServerConfigLoader" relationship="DEPENDENCY">
+      <point x="14.999613288540786" y="-198.5" />
+      <point x="2456.416" y="154.62609182530804" />
+      <point x="-158.5" y="5.119932810750299" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.Method" relationship="DEPENDENCY">
+      <point x="4.755505788125447E-4" y="-44.0" />
+      <point x="2097.556" y="224.0" />
+      <point x="1341.906" y="224.0" />
+      <point x="1.5584173297611414E-5" y="-58.0" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.request.EndRequest" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="15.0" />
+      <point x="2128.056" y="465.5" />
+      <point x="2128.056" y="431.0" />
+      <point x="642.347" y="431.0" />
+      <point x="4.217991795485432E-5" y="-44.0" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.request.Request" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="-90.0" />
+      <point x="2003.556" y="360.5" />
+      <point x="2003.556" y="389.0" />
+      <point x="1303.5" y="389.0" />
+      <point x="1303.5" y="989.0" />
+      <point x="57.00019111608822" y="-2.5" />
+    </edge>
+    <edge source="net.kamilereon.response.EndResponse" target="net.kamilereon.response.Response" relationship="GENERALIZATION">
+      <point x="79.0003333333334" y="0.0" />
+      <point x="1774.0" y="803.5" />
+      <point x="1774.0" y="1004.0" />
+      <point x="1599.417" y="1004.0" />
+      <point x="3.3333333340124227E-4" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.Method" relationship="DEPENDENCY">
+      <point x="4.770436724754745E-4" y="-184.5" />
+      <point x="132.407" y="224.0" />
+      <point x="1341.906" y="224.0" />
+      <point x="1.5584173297611414E-5" y="-58.0" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.response.EndResponse" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="94.0" />
+      <point x="2252.0" y="544.5" />
+      <point x="2252.0" y="525.0" />
+      <point x="1671.917" y="525.0" />
+      <point x="3.3333333340124227E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.quiz.QuizDB" target="net.kamilereon.quiz.QuizDB.QuestionAnswer" relationship="TO_MANY">
+      <point x="-4.863755131054859E-4" y="44.0" />
+      <point x="-303.207" y="904.0" />
+      <point x="-347.707" y="904.0" />
+      <point x="-4.863755131054859E-4" y="-185.0" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.request.NextRequest" relationship="DEPENDENCY">
+      <point x="-54.91005953714091" y="44.0" />
+      <point x="536.347" y="632.0" />
+      <point x="1204.792" y="632.0" />
+      <point x="4.7331093696811877E-4" y="-44.0" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.response.Response" relationship="DEPENDENCY">
+      <point x="101.50047555057881" y="0.0" />
+      <point x="2237.0" y="296.0" />
+      <point x="2237.0" y="697.0" />
+      <point x="1575.417" y="697.0" />
+      <point x="-23.9996666666666" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.response.Response" target="net.kamilereon.response.Response.Status" relationship="DEPENDENCY">
+      <point x="15.0" y="58.0" />
+      <point x="10.0" y="-58.0" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.request.Request" relationship="DEPENDENCY">
+      <point x="14.999940462859058" y="44.0" />
+      <point x="606.257" y="389.0" />
+      <point x="1303.5" y="389.0" />
+      <point x="1303.5" y="989.0" />
+      <point x="57.00019111608822" y="-2.5" />
+    </edge>
+    <edge source="net.kamilereon.utils.LoggerUtils" target="net.kamilereon.Method" relationship="DEPENDENCY">
+      <point x="2.258305338500577E-4" y="43.99990817469197" />
+      <point x="723.445" y="224.0" />
+      <point x="1341.906" y="224.0" />
+      <point x="1.5584173297611414E-5" y="-58.0" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.request.AnswerRequest" relationship="DEPENDENCY">
+      <point x="-14.999522956327539" y="184.5" />
+      <point x="117.407" y="650.0" />
+      <point x="820.778" y="650.0" />
+      <point x="1.9111608821731352E-4" y="-72.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.utils.LoggerUtils" relationship="DEPENDENCY">
+      <point x="15.000477043672475" y="-184.49999999999997" />
+      <point x="147.407" y="95.23236282194853" />
+      <point x="-185.0" y="2.1062709966404896" />
+    </edge>
+    <edge source="net.kamilereon.parser.ResponseParser" target="net.kamilereon.response.StartResponse" relationship="DEPENDENCY">
+      <point x="101.50047555057881" y="-15.0" />
+      <point x="2219.0" y="281.0" />
+      <point x="2219.0" y="721.0" />
+      <point x="1466.917" y="721.0" />
+      <point x="3.3333333340124227E-4" y="-100.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.response.Response" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="0.0" />
+      <point x="2237.0" y="450.5" />
+      <point x="2237.0" y="697.0" />
+      <point x="1575.417" y="697.0" />
+      <point x="-23.9996666666666" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.request.AnswerRequest" target="net.kamilereon.request.Request" relationship="GENERALIZATION">
+      <point x="86.00019111608822" y="0.0" />
+      <point x="927.0" y="817.5" />
+      <point x="927.0" y="926.0" />
+      <point x="958.528" y="926.0" />
+      <point x="1.9111608821731352E-4" y="-29.5" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.request.EndRequest" relationship="DEPENDENCY">
+      <point x="29.99994046285906" y="44.0" />
+      <point x="621.257" y="431.0" />
+      <point x="642.347" y="431.0" />
+      <point x="4.217991795485432E-5" y="-44.0" />
+    </edge>
+    <edge source="net.kamilereon.quiz.QuizGame" target="net.kamilereon.quiz.QuizDB.QuestionAnswer" relationship="TO_MANY">
+      <point x="-158.0004863755131" y="0.0" />
+      <point x="-506.707" y="521.0" />
+      <point x="-506.707" y="904.0" />
+      <point x="-347.707" y="904.0" />
+      <point x="-4.863755131054859E-4" y="-185.0" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.response.StartResponse" relationship="DEPENDENCY">
+      <point x="-44.99952295632754" y="184.5" />
+      <point x="87.407" y="721.0" />
+      <point x="1466.917" y="721.0" />
+      <point x="3.3333333340124227E-4" y="-100.5" />
+    </edge>
+    <edge source="net.kamilereon.response.StartResponse" target="net.kamilereon.response.Response" relationship="GENERALIZATION">
+      <point x="3.3333333340124227E-4" y="100.5" />
+      <point x="1466.917" y="1004.0" />
+      <point x="1599.417" y="1004.0" />
+      <point x="3.3333333340124227E-4" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.request.AnswerRequest" relationship="DEPENDENCY">
+      <point x="-5.953714094175666E-5" y="44.0" />
+      <point x="591.257" y="410.0" />
+      <point x="1079.0" y="410.0" />
+      <point x="1079.0" y="650.0" />
+      <point x="820.778" y="650.0" />
+      <point x="1.9111608821731352E-4" y="-72.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.request.NextRequest" relationship="DEPENDENCY">
+      <point x="167.9996132885408" y="0.0" />
+      <point x="2969.26" y="450.5" />
+      <point x="2969.26" y="752.5" />
+      <point x="2252.0" y="752.5" />
+      <point x="2252.0" y="632.0" />
+      <point x="1204.792" y="632.0" />
+      <point x="4.7331093696811877E-4" y="-44.0" />
+    </edge>
+    <edge source="net.kamilereon.response.AnswerResponse" target="net.kamilereon.response.Response" relationship="GENERALIZATION">
+      <point x="-97.50040126912995" y="0.0" />
+      <point x="1774.0" y="859.5" />
+      <point x="1774.0" y="1004.0" />
+      <point x="1599.417" y="1004.0" />
+      <point x="3.3333333340124227E-4" y="-58.00048824188116" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.utils.MessageUtils" relationship="DEPENDENCY">
+      <point x="-3.867114592139842E-4" y="-198.5" />
+      <point x="2441.416" y="181.0" />
+      <point x="1355.774" y="181.0" />
+      <point x="3.344531542097684E-4" y="44.000440089585545" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.quiz.QuizDB" relationship="DEPENDENCY">
+      <point x="-201.49952295632755" y="0.0" />
+      <point x="-93.0" y="436.5" />
+      <point x="-93.0" y="830.0" />
+      <point x="185.9995136244869" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.server.Server" relationship="TO_ONE">
+      <point x="-201.5" y="-45.0" />
+      <point x="-154.4565136244869" y="391.5" />
+      <point x="45.11310190369545" y="100.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.quiz.QuizGame" relationship="TO_ONE">
+      <point x="-201.5" y="-30.0" />
+      <point x="158.0" y="-114.5" />
+    </edge>
+    <edge source="net.kamilereon.request.StartRequest" target="net.kamilereon.request.Request" relationship="GENERALIZATION">
+      <point x="-75.49980888391178" y="0.0" />
+      <point x="927.0" y="803.5" />
+      <point x="927.0" y="926.0" />
+      <point x="958.528" y="926.0" />
+      <point x="1.9111608821731352E-4" y="-29.5" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.utils.ResponseHandler" relationship="DEPENDENCY">
+      <point x="168.0" y="110.5" />
+      <point x="-142.5" y="0.0" />
+    </edge>
+    <edge source="net.kamilereon.client.Client" target="net.kamilereon.response.StartResponse" relationship="DEPENDENCY">
+      <point x="-168.0003867114592" y="148.5" />
+      <point x="2219.0" y="599.0" />
+      <point x="2219.0" y="721.0" />
+      <point x="1466.917" y="721.0" />
+      <point x="3.3333333340124227E-4" y="-100.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.utils.MessageUtils" relationship="DEPENDENCY">
+      <point x="-14.999522956327539" y="-184.5" />
+      <point x="117.407" y="181.0" />
+      <point x="1355.774" y="181.0" />
+      <point x="3.344531542097684E-4" y="44.000440089585545" />
+    </edge>
+    <edge source="net.kamilereon.parser.RequestParser" target="net.kamilereon.request.StartRequest" relationship="DEPENDENCY">
+      <point x="-15.000059537140942" y="44.0" />
+      <point x="576.257" y="674.0" />
+      <point x="1022.278" y="674.0" />
+      <point x="1.9111608821731352E-4" y="-58.5" />
+    </edge>
+    <edge source="net.kamilereon.server.ServerThread" target="net.kamilereon.response.Response" relationship="DEPENDENCY">
+      <point x="4.770436724754745E-4" y="184.5" />
+      <point x="132.407" y="697.0" />
+      <point x="1575.417" y="697.0" />
+      <point x="-23.9996666666666" y="-58.00048824188116" />
+    </edge>
+  </edges>
+  <settings layout="Series Parallel" zoom="0.46754385964912276" showDependencies="true" x="1820.8151969981166" y="807.0075046904284" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
